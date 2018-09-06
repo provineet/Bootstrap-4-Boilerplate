@@ -1,0 +1,13 @@
+
+// Importing SCSS Varibales that can over-ride bootstrap variables : https://getbootstrap.com/docs/4.1/getting-started/theming/
+@import 'template_stylesheet/template_variables';
+// Importing Bootstrap4 SCSS
+@import 'bootstrap4/bootstrap';
+// Importing FontAwesome5 | Brands | Solid | Regular => FontAwesome Cheat Sheet : https://fontawesome.com/cheatsheet
+@import 'fontawesome/fontawesome';
+@import 'fontawesome/brands';
+@import 'fontawesome/solid';
+// @import 'fontawesome/regular';
+
+// Add a new global SCSS dependency here
+// @import 'YOUR-SCSS-FRAMEWORK-FOLDER/YOUR-SCSS-FRAMEWORK-FILE.scss';
