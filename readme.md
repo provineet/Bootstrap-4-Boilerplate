@@ -2,6 +2,8 @@
 
 A HTML project boilerplate for Bootstrap 4, Fontawesome 5 and BrowserSync using NPM and Gulp.
 
+![bootstrap 4 Boilerplate](./bootstrap4-bolierplate.jpg)
+
 ## Quick Start
 ```
 1. Clone this repo
