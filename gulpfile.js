@@ -177,8 +177,7 @@ gulp.task( 'clean-vendor-assets', function() {
 // Copies the files to the /dist folder for distribution of end product
 gulp.task( 'dist', ['clean-dist'], function() {
   return gulp.src( ['**/*', '!' + paths.node, '!' + paths.node + '/**', '!' + paths.dev, '!' + paths.dev + '/**', '!' + paths.dist, '!' + paths.dist + '/**', '!' + paths.devdist, '!' + paths.devdist + '/**', '!' + paths.scss, '!' + paths.scss + '/**', '!readme.txt', '!readme.md', '!package.json', '!package-lock.json', '!gulpfile.js', '!gulpconfig.json', '!CHANGELOG.md', '!.travis.yml', '!jshintignore',  '!codesniffer.ruleset.xml',  '*'], { 'buffer': false } )
-  .pipe( replace( '/js/jquery.slim.min.js', '/js' + paths.vendor + '/jquery.slim.min.js', { 'skipBinary': true } ) )
-    .pipe( gulp.dest( paths.dist ) );
+  .pipe( gulp.dest( paths.dist ) );
 });
 
 // Deleting any file inside the /dist folder
