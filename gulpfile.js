@@ -22,6 +22,14 @@ var gulpSequence = require( 'gulp-sequence' );
 var replace = require( 'gulp-replace' );
 var autoprefixer = require( 'gulp-autoprefixer' );
 var babel = require( 'gulp-babel' );
+var gulpif = require( 'gulp-if' );
+
+// Condition to use Babel on custom-javascript.js file inside ./src/ folder
+// var babel_condition = function( file ){
+//                               var fileName = new RegExp("custom-javascript.js");
+//                               if( fileName.test(file.path) )
+//                                 return true;
+//                               };
 
 gulp.task( 'watch-scss', ['browser-sync'], function() {
     gulp.watch( paths.scss + '/**/*.scss', ['scss-for-dev'] );
@@ -127,16 +135,16 @@ gulp.task( 'scripts', function() {
 
   gulp.src( scripts )
     .pipe( concat( 'scripts.min.js' ) )
-    .pipe( babel({
-            presets: ['@babel/env']
+    .pipe( babel( {
+            presets: [ [ '@babel/env', { loose: true, modules: false } ] ]
         }) )
     .pipe( uglify( { output: { comments: 'some' } } ) )
     .pipe( gulp.dest( paths.js ) );
 
   gulp.src( scripts )
     .pipe( concat( 'scripts.js' ) )
-    .pipe( babel({
-            presets: ['@babel/env']
+    .pipe( babel( {
+            presets: [ [ '@babel/env', { loose: true, modules: false } ] ]
         }) )
     .pipe( gulp.dest( paths.js ) );
 });
