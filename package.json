@@ -1,6 +1,6 @@
 {
   "name": "easepress",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom theme for easepress",
   "main": "index.js",
   "scripts": {
@@ -30,8 +30,8 @@
     "gulp-clean-css": "^3.9.2",
     "gulp-clone": "2.0.1",
     "gulp-concat": "^2.6.1",
-    "gulp-if": "^2.0.2",
     "gulp-ignore": "^2.0.2",
+    "gulp-if": "^2.0.2",
     "gulp-imagemin": "^4.1.0",
     "gulp-plumber": "^1.2.1",
     "gulp-rename": "^1.2.2",
