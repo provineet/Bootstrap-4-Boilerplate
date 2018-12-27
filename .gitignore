@@ -1,5 +1,5 @@
 node_modules
 assets
+src/js/bootstrap4
 src/scss/bootstrap4
 src/scss/fontawesome
-src/js/bootstrap4
