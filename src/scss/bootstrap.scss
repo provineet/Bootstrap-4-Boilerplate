@@ -1,0 +1,4 @@
+// Importing SCSS Varibales that can over-ride bootstrap variables : https://getbootstrap.com/docs/4.1/getting-started/theming/
+@import 'scss_vars/template_variables';
+// Importing Bootstrap4 SCSS
+@import 'bootstrap4/bootstrap';
