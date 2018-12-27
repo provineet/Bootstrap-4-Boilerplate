@@ -229,7 +229,7 @@ gulp.task( 'dev-dist', ['clean-dev-dist'], function() {
     .pipe( gulp.dest( paths.devdist ) );
 } );
 
-// Deleting any file inside the /dev-dist folder
+// Deleting any file inside the /dev-dist folder.
 gulp.task( 'clean-dev-dist', function() {
   return del( [paths.devdist + '/**'] );
 } );
